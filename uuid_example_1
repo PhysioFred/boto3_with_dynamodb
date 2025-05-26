@@ -1,0 +1,5 @@
+import uuid
+
+uuid_value = uuid.uuid4()
+
+print(uuid_value)

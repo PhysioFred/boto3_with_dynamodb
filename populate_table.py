@@ -15,7 +15,7 @@ def add_student(name, grade, house, detention_count):
         "name": name,
         "grade": grade,
         "house": house,
-        "detention_court": detention_count
+        "detention_count": detention_count
     })
     print(f"Added student: {student_id} ,{name}")
 

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+aws dynamodb put-item \
+    --table-name Murdah \
+    --item '{
+        "student_id": {"S": "1a1ae9fd-de43-439b-824b-15d40e18fc86"},
+        "name": {"S": "Jeffrey Dahmer"},
+        "grade": {"N": "12"},
+        "house":  {"S": "Green"},
+        "detention_count": {"N": "17"}
+    }'

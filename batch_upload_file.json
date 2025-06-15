@@ -1,0 +1,103 @@
+{
+  "Murdah": [
+    {
+      "PutRequest": {
+        "Item": {
+          "student_id": {"S": "11112222-3333-4444-5555-666677778888"},
+          "name": {"S": "John Wayne Gacy"},
+          "grade": {"N": "11"},
+          "house": {"S": "Red"},
+          "detention_count": {"N": "7"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "student_id": {"S": "22223333-4444-5555-6666-777788889999"},
+          "name": {"S": "Aileen Wuornos"},
+          "grade": {"N": "10"},
+          "house": {"S": "Orange"},
+          "detention_count": {"N": "9"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "student_id": {"S": "33334444-5555-6666-7777-888899990000"},
+          "name": {"S": "Richard Ramirez"},
+          "grade": {"N": "12"},
+          "house": {"S": "Black"},
+          "detention_count": {"N": "12"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "student_id": {"S": "44445555-6666-7777-8888-999900001111"},
+          "name": {"S": "Ed Gein"},
+          "grade": {"N": "11"},
+          "house": {"S": "Brown"},
+          "detention_count": {"N": "3"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "student_id": {"S": "55556666-7777-8888-9999-000011112222"},
+          "name": {"S": "Zodiac Killer"},
+          "grade": {"N": "12"},
+          "house": {"S": "Mystery"},
+          "detention_count": {"N": "0"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "student_id": {"S": "66667777-8888-9999-0000-111122223333"},
+          "name": {"S": "H.H. Holmes"},
+          "grade": {"N": "12"},
+          "house": {"S": "White"},
+          "detention_count": {"N": "20"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "student_id": {"S": "77778888-9999-0000-1111-222233334444"},
+          "name": {"S": "Ed Kemper"},
+          "grade": {"N": "11"},
+          "house": {"S": "Blue"},
+          "detention_count": {"N": "6"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "student_id": {"S": "88889999-0000-1111-2222-333344445555"},
+          "name": {"S": "David Berkowitz"},
+          "grade": {"N": "10"},
+          "house": {"S": "Yellow"},
+          "detention_count": {"N": "4"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "student_id": {"S": "99990000-1111-2222-3333-444455556666"},
+          "name": {"S": "Charles Manson"},
+          "grade": {"N": "12"},
+          "house": {"S": "Red"},
+          "detention_count": {"N": "15"}
+        }
+      }
+    }
+  ]
+}

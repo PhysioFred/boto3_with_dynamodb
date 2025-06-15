@@ -1,0 +1,19 @@
+#!/bin/bash
+
+#aws cli create dynamodb table
+#table name
+#define attribute \
+# Attribute name and type (String, Int or Binary)
+#which attribute is going to be the primary key \
+# which attribute and keytype (single [HASH] / composite [RANGE])
+#what is the read/write capacity for my table, min 1 - expressed as capacityunits  \ 
+# higher number higher r/w speed and increased cost
+
+aws dynamodb create-table \
+    --table-name Murdah \
+    --attribute-definitions AttributeName=student_id,AttributeType=S \
+    --key-schema AttributeName=student_id,KeyType=HASH \
+    --provisioned-throughput ReadCapacityUnits=1,WriteCapacityUnits=1
+
+# table already created 
+

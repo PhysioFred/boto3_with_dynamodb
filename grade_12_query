@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+aws dynamodb scan \
+    --table-name Murdah \
+    --filter-expression "grade = :grade" \
+    --expression-attribute-values '{":grade": {"N": "12"}}' \

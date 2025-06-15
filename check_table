@@ -1,0 +1,23 @@
+import boto3
+import uuid
+
+#DRY Code (Don't Repeat Yourself)
+dynamodb = boto3.resource("dynamodb")
+table = dynamodb.Table("Murdah")
+
+#Modularity/Seperation of Concerns
+#Encapsulation in OOP
+
+def scan_table():
+    response = table.scan()
+    return response['Items']
+
+#need to practice loops with dictionaries and what dictionaries
+def list_students():
+    print("\nAll students:")
+    student_response = scan_table()
+    for student in student_response:
+        print(f"{student['student_id']}: {student['name']}, Grade: {student['grade']}, House: {student['house']}, Dentention Count {student['detention_count']}")
+
+
+list_students()

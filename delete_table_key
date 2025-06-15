@@ -1,0 +1,19 @@
+import boto3
+
+dynamodb = boto3.resource('dynamodb')
+table = dynamodb.Table('Murdah')
+
+# First scan to find all items with the misspelled attribute
+response = table.scan(
+    FilterExpression="attribute_exists(detention_court)"
+)
+
+# Delete each problematic item
+with table.batch_writer() as batch:
+    for item in response['Items']:
+        print(f"Deleting item with student_id: {item['student_id']}")
+        batch.delete_item(
+            Key={'student_id': item['student_id']}
+        )
+
+print(f"Deleted {len(response['Items'])} items with misspelled attribute")

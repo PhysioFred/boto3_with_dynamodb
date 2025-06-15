@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+file="murdah_full_export.json"
+
+if [ -f "$file" ]; then
+    read -p "File exists. Overwrite? (y/N) " answer
+    [[ "$answer" != [yY] ]] && echo "Aborted script" && exit 1
+fi
+
+aws dynamodb scan \
+    --table-name Murdah \
+    --output json \
+    > "$file"
